@@ -1,0 +1,41 @@
+@keyframes labelsOpen {
+    0% {
+        transform: scaleY(0.5);
+        color: transparent;
+        padding-right: 0;
+        padding-left: 0;
+        width: 40px;
+    }
+
+    66% {
+        transform: scaleY(1);
+        width: fit-content;
+    }
+
+    100% {
+        transform: scaleY(1);
+        color: currentColor;
+        width: fit-content;
+    }
+}
+
+@keyframes labelsClose {
+    0% {
+        transform: scaleY(1);
+        color: currentColor;
+        width: fit-content;
+    }
+    
+    66% {
+        transform: scaleY(1);
+        width: fit-content;
+    }
+
+    100% {
+        transform: scaleY(0.5);
+        color: transparent;
+        padding-right: 0;
+        padding-left: 0;
+        width: 40px;
+    }
+}
