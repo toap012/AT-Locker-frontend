@@ -39,17 +39,17 @@ export class ShoeService {
     }
 
 
-    public shouldAdoptShoe() {
-        return this.http.get<{ answer: string }>('https://yesno.wtf/api')
-            .pipe(
-                map(res => res.answer),
-                retry(1),
-                catchError((err: HttpErrorResponse) => {
-                    console.log('err:', err)
-                    return throwError(() => err)
-                })
-            )
-    }
+    // public shouldAdoptShoe() {
+    //     return this.http.get<{ answer: string }>('https://yesno.wtf/api')
+    //         .pipe(
+    //             map(res => res.answer),
+    //             retry(1),
+    //             catchError((err: HttpErrorResponse) => {
+    //                 console.log('err:', err)
+    //                 return throwError(() => err)
+    //             })
+    //         )
+    // }
 
     public getEmptyShoe() {
         return { name: '', age: 0, birthDate: new Date() }

@@ -1,0 +1,23 @@
+.app-header {
+    align-items: center;
+    gap: 3rem;
+    height: 50px;
+    padding: 5px 10px;
+    // background-color: $clr1;
+    background-color:  #352F44;
+
+    .logo {
+        cursor: pointer;
+    }
+
+    .nav-links {
+        width: 25vw;
+
+        .nav-link {
+            &:hover {
+                cursor: pointer;
+                text-decoration: underline;
+            }
+        }
+    }
+}
