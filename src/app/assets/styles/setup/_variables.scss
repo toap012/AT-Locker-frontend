@@ -1,10 +1,14 @@
-$clr1: #352F44;
+$clr1: #fffefe;
 $clr2: #5C5470;
 $clr3: #B9B4C7;
-$clr4: #FAF0E6;
+$clr4: #e9e8e8ec;
 
-$txt-clr1: #f2edea;
+$txt-clr1: rgb(42, 41, 41);
 
+$box-shadow-article: 5px 5px 10px -1px rgba(87, 87, 87, 0.53);
+$box-shadow-header: 0px 5px 0px -3px rgba(87,87,87,0.39);
+$border-radius-article: 1rem;
+$border-radius-article-small: 0.8rem;
 
 // icon variables //
 $icon-member: "\e946";
@@ -43,9 +47,3 @@ $icon-external-link: "\e92c";
 $mobile-breakpoint: 460px;
 $narrow-breakpoint: 720px;
 $normal-breakpoint: 960px;
-
-//lentgh
-$header-hight: 48px;
-$board-hight: calc(100vh - $header-hight);
-$board-header-hight: auto;
-$board-header-width: calc(100% - 23px);

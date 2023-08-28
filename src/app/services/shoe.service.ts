@@ -119,10 +119,10 @@ export class ShoeService {
 
     private _createShoes() {
         const shoes: Shoe[] = [
-            { _id: 'p123', name: 'Pharoh', type: 'sneakers', createdAt: Date.now(), price: 100, imgUrl: '' },
-            { _id: 'p124', name: 'Dues', type: 'sneakers', createdAt: Date.now(), price: 150, imgUrl: '' },
-            { _id: 'p125', name: 'Snow', type: 'sneakers', createdAt: Date.now(), price: 120, imgUrl: '' },
-            { _id: 'p126', name: 'Doils', type: 'sneakers', createdAt: Date.now(), price: 250, imgUrl: '' },
+            { _id: 'p123', name: 'Pharoh', type: 'sneakers', createdAt: Date.now(), price: 100, imgUrl: '/src/app/assets/img/shoes/allstar-high-gray.jpg' },
+            { _id: 'p124', name: 'Dues', type: 'sneakers', createdAt: Date.now(), price: 150, imgUrl: '/src/app/assets/img/shoes/sneakers-high-gray.jpg' },
+            { _id: 'p125', name: 'Snow', type: 'sneakers', createdAt: Date.now(), price: 120, imgUrl: '/src/app/assets/img/shoes/sneakers-high-white.jpg' },
+            { _id: 'p126', name: 'Doils', type: 'sneakers', createdAt: Date.now(), price: 250, imgUrl: '/src/app/assets/img/shoes/sneakers-short-colored.jpg' },
         ];
         return shoes
     }

@@ -14,6 +14,7 @@ body {
     z-index: 0;
     height: 100%;
     color: $txt-clr1;
+    background-color: $clr1;
 }
 
 body,
@@ -92,6 +93,7 @@ button,
     padding: 6px 12px;
     position: relative;
     text-decoration: none;
+    cursor: pointer;
 }
 
 textarea {
@@ -121,9 +123,10 @@ textarea {
 //     max-width: 40ch;
 // }
 
-// a {
-//     text-decoration: none;
-// }
-// a:hover {
-//     text-decoration: underline;
-// }
+a {
+    text-decoration: none;
+    color: inherit;
+}
+a:hover {
+    text-decoration: underline;
+}

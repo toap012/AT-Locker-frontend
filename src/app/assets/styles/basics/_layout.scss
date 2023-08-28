@@ -1,7 +1,10 @@
 .main-container {
-    display: flex;
-    flex-direction: column;
-    height: 100vh;
+    display: grid;
+    grid-template-columns: 60px 1fr 60px;
+
+    &>*{
+        grid-column: 2;
+    }
 }
 
 // @include for-narrow-layout {
