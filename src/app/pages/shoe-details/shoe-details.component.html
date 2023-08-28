@@ -1,1 +1,7 @@
-<p>shoe-details works!</p>
+<section *ngIf="shoe$|async as shoe">
+    <img src="{{shoe.image}}" alt="shoe" />
+    <h5 class="type">{{shoe.type}}</h5>
+    <h1 class="name">{{shoe.name}}</h1>
+    <p><span class="price">$ {{shoe.price}} USD</span></p>
+    <button (click)="onBack()">Back</button>
+</section>

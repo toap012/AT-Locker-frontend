@@ -8,7 +8,6 @@
     transition: scale 350ms;
 
     &:hover {
-        cursor: pointer;
         scale: 1.05;
         box-shadow: $box-shadow-article;
     }

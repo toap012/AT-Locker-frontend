@@ -5,6 +5,7 @@ import { HomePageComponent } from './app/pages/home-page/home-page.component';
 import { AboutPageComponent } from './app/pages/about-page/about-page.component';
 import { ShoeDetailsComponent } from './app/pages/shoe-details/shoe-details.component';
 import { ShoeEditComponent } from './app/pages/shoe-edit/shoe-edit.component';
+import { shoeResolver } from './app/resolvers/shoe.resolver';
 
 const routes: Routes = [
   { path: '', component: HomePageComponent },
@@ -16,7 +17,7 @@ const routes: Routes = [
 
     ]
   },
-  { path: 'shoe/:id', component: ShoeDetailsComponent },
+  { path: 'shoe/:id', component: ShoeDetailsComponent, resolve: { shoe: shoeResolver } },
 ];
 
 @NgModule({
