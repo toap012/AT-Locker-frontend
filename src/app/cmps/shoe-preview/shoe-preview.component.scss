@@ -6,10 +6,15 @@
     background-color: $clr4;
     border-radius: $border-radius-article-small;
     transition: scale 350ms;
-    &:hover{
+
+    &:hover {
         cursor: pointer;
         scale: 1.05;
         box-shadow: $box-shadow-article;
+    }
+
+    img {
+        max-width: 100%;
     }
 
 }

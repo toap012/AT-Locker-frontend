@@ -1,4 +1,4 @@
-<img src="{{shoe.imgUrl}}" alt="shoe">
+<a [routerLink]="['shoe', shoe._id]"><img src="{{shoe.image}}" alt="shoe"></a>
 <h5 class="type">{{shoe.type}}</h5>
 <h1 class="name">{{shoe.name}}</h1>
 <p><span class="price">$ {{shoe.price}} USD</span></p>

@@ -1,10 +1,11 @@
 export interface Shoe {
     _id: string
     name: string
-    type: string
-    createdAt: number
+    type?: string
+    createdAt?: number
     price: number
-    imgUrl: string
+    image: string
+    description: string
 }
 
 export interface FilterBy {

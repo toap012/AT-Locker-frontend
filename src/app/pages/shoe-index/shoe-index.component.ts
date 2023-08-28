@@ -14,6 +14,7 @@ export class ShoeIndexComponent implements OnInit, OnDestroy {
   shoes$!: Observable<Shoe[]>
   ngOnInit(): void {
     this.shoes$ = this.shoeService.shoes$
+   
   }
   ngOnDestroy(): void {
 
