@@ -1,4 +1,4 @@
-import { Component, Input } from '@angular/core';
+import { Component, Input, Output, EventEmitter } from '@angular/core';
 import { Shoe } from 'src/app/models/shoe.model';
 
 @Component({
@@ -8,4 +8,6 @@ import { Shoe } from 'src/app/models/shoe.model';
 })
 export class ShoeListComponent {
   @Input() shoes: Shoe[] | null = null
+  @Output() remove = new EventEmitter<string>()
+
 }

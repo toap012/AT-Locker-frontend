@@ -1,1 +1,19 @@
-<p>shoe-edit works!</p>
+<section class="shoe-edit">
+    <h2>{{'Add'}} shoe</h2>
+    <form #form="ngForm" (ngSubmit)="onSaveShoe()">
+        <label for="name">Name</label>
+        <input [(ngModel)]="shoe.name" type="text" name="name" id="name" required minlength="4" autocomplete="off">
+
+        <label for="description">Description</label>
+        <input [(ngModel)]="shoe.description" type="text" name="description" id="description">
+
+        <label for="price">Price</label>
+        <input [(ngModel)]="shoe.price" type="number" name="price" id="price" required autocomplete="off">
+
+        <button>Save</button>
+    </form>
+
+    
+
+    <a routerLink="/shoe">Back</a>
+</section>

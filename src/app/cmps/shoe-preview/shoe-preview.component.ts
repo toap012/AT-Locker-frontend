@@ -1,4 +1,4 @@
-import { Component, Input } from '@angular/core';
+import { Component,Output, EventEmitter, Input } from '@angular/core';
 import { Shoe } from 'src/app/models/shoe.model';
 
 @Component({
@@ -8,4 +8,7 @@ import { Shoe } from 'src/app/models/shoe.model';
 })
 export class ShoePreviewComponent {
   @Input() shoe!: Shoe
+  @Output() remove = new EventEmitter<string>()
+
+
 }

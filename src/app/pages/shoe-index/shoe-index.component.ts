@@ -1,4 +1,4 @@
-import { Component, OnDestroy, OnInit } from '@angular/core';
+import { Component, OnDestroy, OnInit, } from '@angular/core';
 import { Shoe } from 'src/app/models/shoe.model';
 import { ShoeService } from 'src/app/services/shoe.service';
 import { Observable, Subscription } from 'rxjs';
@@ -14,9 +14,14 @@ export class ShoeIndexComponent implements OnInit, OnDestroy {
   shoes$!: Observable<Shoe[]>
   ngOnInit(): void {
     this.shoes$ = this.shoeService.shoes$
-   
+
   }
   ngOnDestroy(): void {
 
+  }
+  onRemoveShoe(shoeId: string) {
+    this.shoeService.remove(shoeId).subscribe({
+      error: err => console.log('err', err)
+    })
   }
 }

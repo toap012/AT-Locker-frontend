@@ -3,7 +3,10 @@
         <h1>Our products</h1>
         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sequi laboriosam earum asperiores nam, odio consequatur eius harum esse, architecto placeat itaque, saepe ex! Recusandae harum perspiciatis vitae aspernatur ducimus libero.</p>
     </header>
-    <h1>Shoes! Shoes! EVERYWHERE!!</h1>
-    <app-shoe-list  [shoes]="shoes$|async"></app-shoe-list>
+    <section>
+        <h1>Shoes! Shoes! EVERYWHERE!!</h1>
+        <a routerLink="edit">Add shoe</a>
+    </section>
+    <app-shoe-list (remove)="onRemoveShoe($event)"  [shoes]="shoes$|async"></app-shoe-list>
 </section>
 <router-outlet></router-outlet>

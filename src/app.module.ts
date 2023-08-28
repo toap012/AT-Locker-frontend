@@ -12,6 +12,7 @@ import { HomePageComponent } from './app/pages/home-page/home-page.component';
 import { AboutPageComponent } from './app/pages/about-page/about-page.component';
 import { ShoeDetailsComponent } from './app/pages/shoe-details/shoe-details.component';
 import { ShoeEditComponent } from './app/pages/shoe-edit/shoe-edit.component';
+import { FormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -28,7 +29,8 @@ import { ShoeEditComponent } from './app/pages/shoe-edit/shoe-edit.component';
   imports: [
     BrowserModule,
     AppRoutingModule,
-    HttpClientModule
+    HttpClientModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

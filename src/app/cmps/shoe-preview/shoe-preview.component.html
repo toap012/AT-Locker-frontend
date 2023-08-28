@@ -2,4 +2,4 @@
 <h5 class="type">{{shoe.type}}</h5>
 <h1 class="name">{{shoe.name}}</h1>
 <p><span class="price">$ {{shoe.price}} USD</span></p>
-<button>X</button>
+<button (click)="remove.emit(shoe._id)">X</button>

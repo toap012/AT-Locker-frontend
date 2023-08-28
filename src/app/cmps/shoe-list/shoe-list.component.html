@@ -1,1 +1,1 @@
-<app-shoe-preview *ngFor="let shoe of shoes" [shoe]="shoe"></app-shoe-preview>
+<app-shoe-preview (remove)="remove.emit($event)" *ngFor="let shoe of shoes" [shoe]="shoe"></app-shoe-preview>
